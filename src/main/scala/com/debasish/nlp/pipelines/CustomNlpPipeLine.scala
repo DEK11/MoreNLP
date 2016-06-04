@@ -20,10 +20,13 @@ class CustomNlpPipeLine extends NlpPipeLine{
 
     for (sentence <- Sentences(string)) {
 
-      val tagsToBeAllowed = Array("NN")
+      val tagsToBeAllowed = Array("JJ", "JJR", "JJS",
+        "MD", "NN", "NNS", "NNP", "NNPS",
+        "RB", "RBR", "RBS", "RP", "UH",
+        "VB", "VBZ", "VBP", "VBD", "VBN", "VBG")
 
       val wordsOnTagsFilter = POSTagger(sentence).filter{
-        case (pair, tag) => true//tagsToBeAllowed contains tag
+        case (pair, tag) => tagsToBeAllowed contains tag
       }
 
       val lemmatizedWords = Lemmatizer(wordsOnTagsFilter)

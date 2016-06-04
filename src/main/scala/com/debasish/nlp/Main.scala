@@ -29,7 +29,7 @@ object Main {
     val cvModel: CountVectorizerModel = new CountVectorizer()
       .setInputCol("review")
       .setOutputCol("features")
-      .setVocabSize(500)
+      .setVocabSize(200)
       .setMinDF(2)
       .fit(df)
 

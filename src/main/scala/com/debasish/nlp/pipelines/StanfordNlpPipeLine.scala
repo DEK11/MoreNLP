@@ -40,7 +40,10 @@ class StanfordNlpPipeLine extends NlpPipeLine {
         val pos = token.get(classOf[PartOfSpeechAnnotation])
         val lemma = token.get(classOf[LemmaAnnotation])
 
-        if((Array("NN") contains pos) || true) {
+        if(Array("JJ", "JJR", "JJS",
+          "MD", "NN", "NNS", "NNP", "NNPS",
+          "RB", "RBR", "RBS", "RP", "UH",
+          "VB", "VBZ", "VBP", "VBD", "VBN", "VBG") contains pos) {
 
           finalWordList.append(lemma)
         }
