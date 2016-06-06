@@ -10,8 +10,8 @@ import opennlp.tools.postag.{POSModel, POSTaggerME}
 private[posTaggers] class OpenNlpPOSTagger extends POSTagger {
 
   private[this] val modelIn = getClass.getResource("/models/en-pos-maxent.bin")
-  val model = new POSModel(modelIn)
-  val tagger = new POSTaggerME(model)
+  private[this] val model = new POSModel(modelIn)
+  private[this] val tagger = new POSTaggerME(model)
 
   def process(string: String): List[(String, String)] = {
 

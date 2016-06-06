@@ -6,13 +6,15 @@ package com.debasish.nlp.ners
 
 trait NER {
 
-  def process(string: String): List[String]
+  def process(string: String): List[(String, String)]
 }
 
 object NER {
 
-  def apply(string: String): List[String] = {
+  val ner = new OpenNlpNER
 
-    List.empty[String]
+  def apply(string: String): List[(String, String)] = {
+
+    ner.process(string)
   }
 }
