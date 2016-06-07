@@ -1,14 +1,13 @@
 #Some(NLP)
 
-This project for me to learn some NLP concepts and also can I integrate it with Spark.
+This project for me to learn some NLP concepts and also I integrated it with Spark.
 There are two types of Pipelines here in the project, first is the NLP pipeline and
 the second is ML pipeline.
 
 But in this project, I actually wanted to work on the more on the NLP pipeline, and how to customize it.
-As I was new to both Stanford NLP and Open NLP, most of time was consumed in understanding these libraries.
+As I was new to both Stanford NLP and Open NLP, most of my time was consumed in understanding these libraries.
 I have built two pipelines, one is where we can call these libraries interchangeably, and
-the second one is a CoreStanfordNLP standard pipeline. The advantage of using one library is I needn't convert it into
-primitive data types after every step.
+the second one is the CoreStanfordNLP standard pipeline. The advantage of using one library is I needn't convert the results into primitive data types after every step.
 
 ##Things to note:
 
