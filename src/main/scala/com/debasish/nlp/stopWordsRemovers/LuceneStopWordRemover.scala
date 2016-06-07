@@ -9,7 +9,7 @@ import scala.collection.mutable.ListBuffer
 
 private[stopWordsRemovers] class LuceneStopWordRemover extends StopWordRemover{
 
-  val stopWords = EnglishAnalyzer.getDefaultStopSet
+  private[this] val stopWords = EnglishAnalyzer.getDefaultStopSet
 
   def remove(words: List[String]): List[String] = {
 

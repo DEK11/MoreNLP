@@ -9,7 +9,7 @@ import scala.collection.mutable.ListBuffer
 
 private[stemmers] class OpenNLPSnowballStemmer extends Stemmer {
 
-  val stemmer = new SnowballStemmer(SnowballStemmer.ALGORITHM.ENGLISH)
+  private[this] val stemmer = new SnowballStemmer(SnowballStemmer.ALGORITHM.ENGLISH)
 
   def process(words: List[String]): List[String] = {
 

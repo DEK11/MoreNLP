@@ -9,9 +9,9 @@ import scala.collection.mutable.ListBuffer
   * Created by Debasish Kaushik on 6/5/16.
   */
 
-class StanfordNER extends NER {
+private[ners] class StanfordNER extends NER {
 
-  val classifier = CRFClassifier.getClassifierNoExceptions(DefaultPaths.DEFAULT_NER_MUC_MODEL)
+  private[this] val classifier = CRFClassifier.getClassifierNoExceptions(DefaultPaths.DEFAULT_NER_MUC_MODEL)
 
   def process(string: String): List[(String, String)] = {
 

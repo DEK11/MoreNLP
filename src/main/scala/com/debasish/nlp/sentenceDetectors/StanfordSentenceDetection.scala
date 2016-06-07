@@ -1,10 +1,8 @@
 package com.debasish.nlp.sentenceDetectors
 
 import java.io.StringReader
-
 import edu.stanford.nlp.ling.Sentence
 import edu.stanford.nlp.process.DocumentPreprocessor
-
 import scala.collection.mutable.ListBuffer
 
 /**

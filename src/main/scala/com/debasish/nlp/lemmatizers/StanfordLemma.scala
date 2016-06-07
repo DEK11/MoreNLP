@@ -10,7 +10,7 @@ import scala.collection.mutable.ListBuffer
 
 private[lemmatizers] class StanfordLemma extends Lemmatizer {
 
-  val morph = new Morphology
+  private[this] val morph = new Morphology
 
   def process(wordTags: List[(String, String)]): List[String] = {
 

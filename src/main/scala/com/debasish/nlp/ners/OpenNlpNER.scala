@@ -13,7 +13,7 @@ import opennlp.tools.util.Span
   * easily be extended to other types of entity recognizer
   */
 
-class OpenNlpNER extends NER {
+private[ners] class OpenNlpNER extends NER {
 
   private[this] val modelIn = getClass.getResource("/models/en-ner-location.bin")
   private[this] val model = new TokenNameFinderModel(modelIn)

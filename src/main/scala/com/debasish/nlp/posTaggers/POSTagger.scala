@@ -11,7 +11,7 @@ private[posTaggers] trait POSTagger {
 
 object POSTagger {
 
-  val posTagger = new StanfordPOSTagger
+  private[this] val posTagger = new StanfordPOSTagger
 
   def apply(string: String): List[(String, String)] = {
 

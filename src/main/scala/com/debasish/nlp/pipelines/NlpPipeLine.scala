@@ -4,7 +4,7 @@ package com.debasish.nlp.pipelines
   * Created by Debasish Kaushik on 5/27/16.
   */
 
-trait NlpPipeLine {
+private[pipelines] trait NlpPipeLine {
 
   def Process(string: String): Array[String]
 }
@@ -12,7 +12,7 @@ trait NlpPipeLine {
 
 object NlpPipeLine {
 
-  val pipeline = new StanfordNlpPipeLine
+  private[this] val pipeline = new StanfordNlpPipeLine
 
   def apply(string: String): Array[String] = {
 

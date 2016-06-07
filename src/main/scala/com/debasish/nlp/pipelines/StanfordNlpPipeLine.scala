@@ -12,11 +12,11 @@ import scala.collection.JavaConversions._
   * Created by Debasish Kaushik on 5/27/16.
   */
 
-class StanfordNlpPipeLine extends NlpPipeLine {
+private[pipelines] class StanfordNlpPipeLine extends NlpPipeLine {
 
-  val props = new Properties()
+  private[this] val props = new Properties()
   props.put("annotators", "tokenize, ssplit, pos, lemma")
-  val pipeline = new StanfordCoreNLP(props)
+  private[this] val pipeline = new StanfordCoreNLP(props)
 
 
   def Process(string: String): Array[String] = {

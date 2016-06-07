@@ -11,7 +11,7 @@ private[tokenizers] trait Tokenizer {
 
 object Tokenizer {
 
-  val tokenizer = new OpenNLPTokenizer
+  private[this] val tokenizer = new OpenNLPTokenizer
 
   def apply(sentence: String): List[String] = {
 

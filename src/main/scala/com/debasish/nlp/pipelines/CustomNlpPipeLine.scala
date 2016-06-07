@@ -12,7 +12,7 @@ import scala.collection.mutable.{ArrayBuffer, ListBuffer}
   * Created by Debasish Kaushik on 5/27/16.
   */
 
-class CustomNlpPipeLine extends NlpPipeLine{
+private[pipelines] class CustomNlpPipeLine extends NlpPipeLine{
 
   def Process(string: String): Array[String] = {
 

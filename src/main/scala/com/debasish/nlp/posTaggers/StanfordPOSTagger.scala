@@ -9,7 +9,7 @@ import edu.stanford.nlp.tagger.maxent.MaxentTagger
 
 private[posTaggers] class StanfordPOSTagger extends POSTagger {
 
-  val tagger = new MaxentTagger(DefaultPaths.DEFAULT_POS_MODEL)
+  private[this] val tagger = new MaxentTagger(DefaultPaths.DEFAULT_POS_MODEL)
 
   def process(string: String): List[(String, String)] = {
 

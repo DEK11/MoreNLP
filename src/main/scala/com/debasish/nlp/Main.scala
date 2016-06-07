@@ -29,7 +29,7 @@ object Main {
     val cvModel: CountVectorizerModel = new CountVectorizer()
       .setInputCol("review")
       .setOutputCol("features")
-      .setVocabSize(200)
+      .setVocabSize(300)
       .setMinDF(2)
       .fit(df)
 
@@ -65,13 +65,5 @@ object Main {
     val accuracy = evaluator.evaluate(predictions)
     println("Test Error = " + (1.0 - accuracy))
 
-//    val rfModel = model.stages(1).asInstanceOf[RandomForestClassificationModel]
-//    println("Learned classification forest model:\n" + rfModel.toDebugString)
-
-
-//    Pipeline("He is a good boy. I'm eating mangoes, and having beer").foreach(println)
-//    Test Error = 0.27993655828707376 with 10 iterations
-//    Test Error = 0.2652656621728786 with 10 iterations with CS
-//    Test Error = 0.26764472640761305
   }
 }

@@ -11,7 +11,7 @@ import java.io.StringReader
 
 private[tokenizers] class WhiteSpaceTokenizer extends Tokenizer {
 
-  val tokenizer = new WhitespaceTokenizer
+  private[this] val tokenizer = new WhitespaceTokenizer
 
   def Tokenize(sentence: String): List[String] = {
 

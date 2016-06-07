@@ -11,7 +11,7 @@ import java.io.StringReader
 
 private[tokenizers] class LuceneTokenizer extends Tokenizer{
 
-  val tokenizer = new StandardTokenizer
+  private[this] val tokenizer = new StandardTokenizer
 
   def Tokenize(sentence: String): List[String] = {
 

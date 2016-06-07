@@ -1,6 +1,6 @@
 #Some(NLP)
 
-This project for me to learn some NLP concepts and also I integrated it with Spark.
+This project is for me to learn some basic NLP concepts and also I integrated it with Spark.
 There are two types of Pipelines here in the project, first is the NLP pipeline and
 the second is ML pipeline.
 
@@ -23,5 +23,5 @@ Stemmers             |                ✓                  |             ✓    
 SentenceDetection           |                ✓                  |             ✓             |
 Parts-of-speech tagging     |                ✓                  |             ✓             |
 Parsers                     |                ✓                  |             ✓             |
-Lemmatizers                 |                ✓                  |             ✓             |  OpenNLP don't have a dictionary. So, using elastic search dict
+Lemmatizers                 |                ✓                  |             ✓             |  OpenNLP don't have a dictionary. So, using the elasticsearch dict
 Named Entity Recognizer     |                ✓                  |             ✓             |  For OpenNLP, only location identifier is implemented

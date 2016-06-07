@@ -8,7 +8,7 @@ import scala.collection.mutable.ListBuffer
 
 private[stopWordsRemovers] class CustomizedStopWordsRemover extends StopWordRemover{
 
-  val stopWords = Set[String]("a", "about", "above", "across", "after", "afterwards",
+  private[this] val stopWords = Set[String]("a", "about", "above", "across", "after", "afterwards",
     "again", "against", "all", "almost", "alone", "along",
     "already", "also", "although", "always", "am", "among",
     "amongst", "amoungst", "amount", "an", "and", "another",

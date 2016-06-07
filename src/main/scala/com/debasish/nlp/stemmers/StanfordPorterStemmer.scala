@@ -9,7 +9,7 @@ import scala.collection.mutable.ListBuffer
 
 private[stemmers] class StanfordPorterStemmer extends Stemmer {
 
-  val stemmer = new PorterStemmer
+  private[this] val stemmer = new PorterStemmer
 
   def process(words: List[String]): List[String] = {
 

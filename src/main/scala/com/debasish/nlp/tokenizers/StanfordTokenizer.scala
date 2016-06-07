@@ -9,7 +9,7 @@ import edu.stanford.nlp.process.PTBTokenizer
 
 private[tokenizers] class StanfordTokenizer extends Tokenizer{
 
-  val tokenizerFactory = PTBTokenizer.factory()
+  private[this] val tokenizerFactory = PTBTokenizer.factory()
 
   def Tokenize(sentence: String): List[String] = {
 

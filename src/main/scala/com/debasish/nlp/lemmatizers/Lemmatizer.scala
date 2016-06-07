@@ -15,7 +15,7 @@ object Lemmatizer {
     *  This reads a file. So, initializing only once
     */
 
-  val lemma = new OpenNLPLemma
+  private[this] val lemma = new OpenNLPLemma
 
   def apply(wordTags: List[(String, String)]): List[String] = {
 

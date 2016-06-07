@@ -11,7 +11,7 @@ private[stemmers] trait Stemmer {
 
 object Stemmer {
 
-  val stem = new StanfordPorterStemmer
+  private[this] val stem = new StanfordPorterStemmer
 
   def apply(words: List[String]): List[String] = {
 

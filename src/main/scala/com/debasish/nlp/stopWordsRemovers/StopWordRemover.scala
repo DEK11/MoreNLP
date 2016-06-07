@@ -13,7 +13,7 @@ private[stopWordsRemovers] trait StopWordRemover {
 
 object StopWordRemover {
 
-  val stopWordRemover = new CustomizedStopWordsRemover
+  private[this] val stopWordRemover = new CustomizedStopWordsRemover
 
   def apply(words: List[String]): List[String] = {
 
