@@ -1,9 +1,7 @@
-
 .idea/
 out/
-src/main/resources/models/en-lemmatizer.dict~
+*~
 src/main/scala/META-INF/
-src/test/
 target/
 *.iws
 *.iml
