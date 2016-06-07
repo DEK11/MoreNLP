@@ -1,4 +1,4 @@
-##MoreNLP
+#Some(NLP)
 
 This project for me to learn some NLP concepts and also can I integrate it with Spark.
 There are two types of Pipelines here in the project, first is the NLP pipeline and
@@ -10,7 +10,7 @@ I have built two pipelines, one is where we can call these libraries interchange
 the second one is a CoreStanfordNLP standard pipeline. The advantage of using one library is I needn't convert it into
 primitive data types after every step.
 
-#Things to note:
+##Things to note:
 
 I am only using previously trained models, the data used is a Kaggle IMDB dataset. It's size is 34 MB. Feeding this data set to a random forest 
 of size 10, I am getting accuracy 74 percent.
